@@ -1,0 +1,15 @@
+<div class="bg-black text-white min-h-screen p-6">
+  <h1 class="text-3xl font-bold mb-4">Explore <span class="text-purple-500">Beats</span></h1>
+  
+  <div class="flex items-center mb-4">
+    <input type="text" class="p-2 w-full bg-gray-800 text-white rounded" placeholder="Search top beats">
+    <button class="ml-2 p-2 bg-purple-600 text-white rounded">Refresh</button>
+  </div>
+
+  <div class="space-y-4">
+    <app-beat-card *ngFor="let beat of beats" [beat]="beat"></app-beat-card>
+  </div>
+  <div *ngIf="beats?.length === 0" class="text-center text-gray-400">
+    No beats available.
+  </div>
+</div>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.beat-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .beat-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .beat-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+html, body { height: 100%; }
+body { background-color: #1e1e1e;
+  color: white;
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
